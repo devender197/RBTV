@@ -1,0 +1,105 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+
+    ext {
+        // Sdk and tools
+        compileSdkVersion = 30
+        minSdkVersion = 21
+        targetSdkVersion = 30
+        buildToolsVersion = '29.0.2'
+        hiltVersion = '2.40.5'
+
+        googleServicesPluginVersion = '4.2.0'
+        firebaseCrashlyticsPluginVersion = '2.4.1'
+
+        // App dependencies
+        gradleVersion = '3.6.0'
+        kotlinVersion = '1.4.20'
+        coroutinesVersion = '1.6.1'
+        ktlintVersion = '0.42.0'
+
+        retrofitVersion = '2.9.0'
+        okHttpVersion = '4.9.3'
+        ok2CurlVersion = '0.7.0'
+        gsonVersion = '2.8.6'
+
+        materialVersion = '1.6.0'
+        desugarVersion = '1.1.5'
+        navGraphVersion = '2.4.2'
+        swipeRefreshVersion = '1.1.0'
+
+        glideVersion = '4.13.0'
+
+        // AndroidX
+        fragmentKtxVersion = '1.3.6'
+        appCompatVersion = '1.4.1'
+        constraintLayoutVersion = '2.1.3'
+        lifecycleVersion = '2.4.1'
+        coreKtxVersion = '1.7.0'
+        dataStoreVersion = '1.0.0-alpha05'
+
+        firebaseAnalyticsVersion = '19.0.0'
+        firebaseCrashlyticsVersion = '17.3.0'
+        firebaseAppIndexingVersion = '19.0.0'
+        playServicesLicensesVersion = '17.0.0'
+        playServicesAdsIdentifierVersion = '17.0.1'
+        amplitudeVersion = '2.31.0'
+
+        branchVersion = '5.0.1'
+
+        timberVersion = '5.0.1'
+        supportDesignVersion = '28.0.0'
+        jsoupVersion = '1.11.1'
+        lottieVersion = '4.2.2'
+
+        //play core
+        playCoreVersion = '1.10.2'
+        playCoreKTXVersion = '1.8.1'
+
+        // Testing
+        junitVersion = '1.1.3'
+        mockitoVersion = '3.11.2'
+        mockitoKotlinVersion = '2.2.0'
+        coroutinesTestVersion = '1.5.1'
+        jsonTestVersion = '20210307'
+
+        // One Trust
+        oneTrust = '6.28.0.0'
+
+        //googleSignIn
+        googleSignInVersion = "20.2.0"
+
+        //ExoPlayer
+        exoPlayerVersion = "2.17.1"
+
+        //data store
+        dataStoreVersion = '1.0.0-alpha05'
+
+        androidxLeanback = "1.0.0"
+    }
+
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.1.3'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+        classpath "com.google.dagger:hilt-android-gradle-plugin:$hiltVersion"
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$navGraphVersion"
+        classpath "com.google.gms:google-services:$googleServicesPluginVersion"
+        classpath "com.google.firebase:firebase-crashlytics-gradle:$firebaseCrashlyticsPluginVersion"
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+plugins {
+    id 'com.android.application' version '7.1.2' apply false
+    id 'com.android.library' version '7.1.2' apply false
+    id 'org.jetbrains.kotlin.android' version '1.5.30' apply false
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Type Scale -->
+    <style name="Headline1">
+        <item name="android:fontFamily">@font/bull_bold</item>
+        <item name="android:textSize">30sp</item>
+        <item name="fontFamily">@font/bull_bold</item>
+    </style>
+
+    <style name="Headline1Mono">
+        <item name="android:fontFamily">@font/bull_bold_mono</item>
+        <item name="android:textSize">30sp</item>
+        <item name="fontFamily">@font/bull_bold_mono</item>
+    </style>
+
+    <style name="Headline2">
+        <item name="android:fontFamily">@font/bull_bold</item>
+        <item name="android:textSize">24sp</item>
+        <item name="fontFamily">@font/bull_bold</item>
+    </style>
+
+    <style name="Headline3">
+        <item name="android:fontFamily">@font/bull_bold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="fontFamily">@font/bull_bold</item>
+    </style>
+
+    <style name="Headline3Mono">
+        <item name="android:fontFamily">@font/bull_bold_mono</item>
+        <item name="android:textSize">20sp</item>
+        <item name="fontFamily">@font/bull_bold_mono</item>
+    </style>
+
+    <style name="Headline4">
+        <item name="android:fontFamily">@font/bull_regular</item>
+        <item name="android:textSize">15sp</item>
+        <item name="fontFamily">@font/bull_regular</item>
+    </style>
+
+    <style name="Headline4Caps">
+        <item name="android:fontFamily">@font/bull_bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">15sp</item>
+        <item name="fontFamily">@font/bull_bold</item>
+    </style>
+
+    <style name="Headline5">
+        <item name="android:fontFamily">@font/bull_regular</item>
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">@font/bull_regular</item>
+    </style>
+
+    <style name="Headline5Bold">
+        <item name="android:fontFamily">@font/bull_bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">@font/bull_bold</item>
+    </style>
+
+    <style name="Headline5Caps">
+        <item name="android:fontFamily">@font/bull_bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">@font/bull_bold</item>
+    </style>
+
+    <style name="Headline6">
+        <item name="android:fontFamily">@font/bull_bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">12sp</item>
+        <item name="fontFamily">@font/bull_bold</item>
+    </style>
+
+    <style name="Headline6Bold">
+        <item name="android:fontFamily">@font/bull_bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">12sp</item>
+        <item name="fontFamily">@font/bull_bold</item>
+    </style>
+
+    <style name="Headline6Caps">
+        <item name="android:fontFamily">@font/bull_bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">12sp</item>
+        <item name="fontFamily">@font/bull_bold</item>
+    </style>
+
+    <style name="Title">
+        <item name="android:fontFamily">@font/bull_bold</item>
+        <item name="android:textSize">12sp</item>
+        <item name="fontFamily">@font/bull_bold</item>
+    </style>
+
+    <style name="Body">
+        <item name="android:fontFamily">@font/bull_regular</item>
+        <item name="android:textSize">10sp</item>
+        <item name="fontFamily">@font/bull_regular</item>
+    </style>
+
+    <style name="Body3">
+        <item name="android:fontFamily">@font/bull_regular</item>
+        <item name="android:textSize">11sp</item>
+        <item name="fontFamily">@font/bull_regular</item>
+    </style>
+
+    <style name="Caption">
+        <item name="android:fontFamily">@font/bull_regular</item>
+        <item name="android:textSize">9sp</item>
+        <item name="fontFamily">@font/bull_regular</item>
+    </style>
+
+    <style name="CaptionBold">
+        <item name="android:fontFamily">@font/bull_bold</item>
+        <item name="android:textSize">9sp</item>
+        <item name="fontFamily">@font/bull_bold</item>
+    </style>
+
+    <!-- Component Styles -->
+
+    <style name="Widget.Leanback.Row.HorizontalGridView.Redbull" parent="Widget.Leanback.Row.HorizontalGridView">
+        <item name="android:paddingStart">0dp</item>
+    </style>
+
+    <style name="Widget.Brand.Button.Primary" parent="Widget.Leanback">
+        <item name="android:gravity">center</item>
+        <item name="android:textColorPrimaryInverse">@color/text_primary_dark</item>
+    </style>
+
+    <style name="Widget.Brand.Button.Primary.Selectable" parent="Widget.Leanback">
+        <item name="android:background">@drawable/bg_btn_color_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAppearance">?textAppearanceHeadline5Caps</item>
+        <item name="android:textColor">@color/btn_text_color_sel</item>
+        <item name="android:textColorPrimaryInverse">@color/text_primary_dark</item>
+    </style>
+
+    <style name="Widget.Brand.Button.Secondary" parent="Widget.Leanback">
+        <item name="android:gravity">center</item>
+        <item name="android:textColorPrimary">@color/text_primary_dark</item>
+        <item name="android:textColorPrimaryInverse">@color/brand_secondary</item>
+        <item name="buttonBgDefault">@color/button_secondary_default</item>
+        <item name="buttonBgActive">@color/button_secondary_active</item>
+    </style>
+
+    <style name="Widget.Brand.Button.MediaOverlay" parent="Widget.Leanback">
+        <item name="android:textColorPrimary">@color/text_primary_light</item>
+        <item name="android:textColorPrimaryInverse">@color/text_primary_dark</item>
+        <item name="iconBgDefault">@color/brand_secondary</item>
+        <item name="iconBgActive">@color/brand_primary</item>
+        <item name="itemBgDefault">@android:color/transparent</item>
+        <item name="itemBgActive">@color/brand_accent</item>
+    </style>
+
+    <style name="Widget.Brand.Item" parent="Widget.Leanback">
+        <item name="android:textColorPrimary">@color/brand_secondary</item>
+        <item name="android:textColorPrimaryInverse">@color/brand_secondary</item>
+        <item name="iconBgDefault">@color/brand_secondary</item>
+        <item name="iconBgActive">@color/brand_primary</item>
+        <item name="itemBgDefault">@android:color/transparent</item>
+        <item name="itemBgActive">@color/brand_accent</item>
+    </style>
+
+</resources>

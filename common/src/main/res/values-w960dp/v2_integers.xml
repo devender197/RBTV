@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="span_count_video_card">3</integer>
+    <integer name="span_count_rating_card">3</integer>
+    <integer name="span_count_generic_page_card">4</integer>
+    <integer name="span_count_format_card">2</integer>
+
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+    Base theme for the white-labeled RBTV mobile app that provides common theme attributes.
+    Only functional attributes here. UI attributes, such as colorPrimary, are defined in a
+    brand-specific theme inside the brand flavor's source set (ie, for Servus the /servus
+    source set). Provide implementations of the Theme.RedBullTV.* themes below to set up a
+    brand-specific theme.
+    -->
+    <style name="Theme.Base" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:splitMotionEvents">false</item>
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap">false</item>
+        <item name="android:windowContentTransitions">true</item>
+
+        <!-- This allows us to color the system bar how we want, which is necessary for drawing -->
+        <!-- completely transparent system bars or light-themed status bars. See -->
+        <!-- WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS -->
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+
+        <item name="android:windowExitTransition">@null</item>
+    </style>
+
+    <!-- Stub themes that will be overridden by ones defined in the brand flavor's source set due -->
+    <!-- to resource merging mechanics. Implement these (or don't) based on the brand's theme -->
+    <style name="Theme.RedBullTV" parent="Theme.Base" />
+    <style name="Theme.RedBullTV.VideoOverlay" />
+    <style name="Theme.RedBullTV.Light" />
+</resources>

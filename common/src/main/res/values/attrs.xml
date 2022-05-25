@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="InputView">
+
+        <attr name="inputViewState" format="enum">
+            <enum name="birthday" value="0" />
+            <enum name="card_number" value="1" />
+            <enum name="code" value="2" />
+            <enum name="cvc" value="3" />
+            <enum name="email" value="4" />
+            <enum name="expiration" value="5" />
+            <enum name="first" value="6" />
+            <enum name="last" value="7" />
+            <enum name="password" value="8" />
+            <enum name="phone" value="9" />
+            <enum name="promo" value="10" />
+            <enum name="zipcode" value="11" />
+        </attr>
+
+        <attr name="showLabel" format="boolean" />
+
+    </declare-styleable>
+
+    <declare-styleable name="CalendarView">
+
+        <attr name="calendarViewState" format="enum">
+            <enum name="display" value="0" />
+            <enum name="picker" value="1" />
+        </attr>
+
+        <attr name="totalDays" format="integer" />
+
+    </declare-styleable>
+
+    <declare-styleable name="PurchaseRowView">
+
+        <attr name="lblLeftText" format="string" />
+        <attr name="lblLeftFont" format="string" />
+        <attr name="lblRightText" format="string" />
+        <attr name="lblRightFont" format="string" />
+
+    </declare-styleable>
+
+    <declare-styleable name="FilterSliderView">
+        <attr name="filterSliderViewState" format="enum">
+            <enum name="time" value="0" />
+            <enum name="points" value="1" />
+            <enum name="distance" value="2" />
+            <enum name="brands" value="3" />
+            <enum name="free" value="4" />
+        </attr>
+    </declare-styleable>
+
+    <!-- CommonShapeableView-->
+
+    <declare-styleable name="CommonShapeable">
+        <attr name="backgroundColor" />
+        <attr name="strokeWidth" />
+        <attr name="strokeColor" />
+        <attr name="cornerRadius" />
+        <attr name="shapeAppearance" />
+        <attr name="outline" format="color" />
+        <attr name="shapeStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CommonStateButton">
+        <attr name="checkedState" format="reference" />
+        <attr name="plainState" format="reference" />
+        <attr name="isChecked" format="boolean" />
+    </declare-styleable>
+
+    //rbtv
+
+    <declare-styleable name="ExpandableTextView">
+        <attr name="animation_duration" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="HorizontalRecyclerView">
+        <attr name="isFeatured" format="boolean" />
+        <attr name="useSnapHelper" format="boolean" />
+        <attr name="cardPadding" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="FlingLimitedRecyclerView">
+        <attr name="flingReduction" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomRadioGroup">
+        <attr name="defaultSelection" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomRadioButton">
+        <attr name="primaryText" format="reference" />
+        <attr name="secondaryText" format="reference" />
+    </declare-styleable>
+
+    <attr name="brandColorSecondary" format="reference" />
+
+    <attr name="textAppearanceHeadline" format="reference" />
+    <attr name="textAppearanceTitle" format="reference" />
+
+    <attr name="emailLoginButtonContainerBackground" format="reference" />
+    <attr name="emailLoginButtonIconVisibility" format="integer" />
+    <attr name="emailLoginButtonTextColor" format="color" />
+
+    <attr name="dividerColor" format="color" />
+
+    <attr name="navItemColor" format="color" />
+
+    <attr name="dialogAppearance" format="reference" />
+    <attr name="dialogNegativeButtonColor" format="color" />
+
+    <!-- Primary background color (separate from windowBackground) -->
+    <attr name="bgColorPrimary" format="color" />
+
+    <attr name="bgColorDarkDialog" format="color" />
+
+    <!-- Primary background color for overflow icon -->
+    <attr name="colorControlNormalOverflowIcon" format="color" />
+
+    <!-- Primary background color for more button in video description -->
+    <attr name="colorMoreButtonVideoDescription" format="color" />
+
+    <attr name="loginTitleText" format="reference" />
+
+    <declare-styleable name="NavMenuItemView">
+        <attr name="navItemShowLabels" format="boolean" />
+        <attr name="navItemOrientation" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="CommonButton">
+        <attr name="icon" format="reference" />
+        <attr name="iconSize" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="FeatureCard">
+        <attr name="title" format="string" localization="suggested" />
+        <attr name="desc" format="string" localization="suggested" />
+        <attr name="imageUrl" format="string" localization="suggested" />
+        <attr name="videoUrl" format="string" />
+    </declare-styleable>
+
+
+</resources>

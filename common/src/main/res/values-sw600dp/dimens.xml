@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Corner Bug -->
+    <dimen name="corner_bug_margin">24dp</dimen>
+    <dimen name="corner_bug_width">84dp</dimen>
+    <dimen name="corner_bug_height">48dp</dimen>
+
+    <!-- since we handle config changes, we can't rely on resource qualifiers to provide these values -->
+    <dimen name="corner_bug_margin_landscape">24dp</dimen>
+    <dimen name="corner_bug_width_landscape">84dp</dimen>
+    <dimen name="corner_bug_height_landscape">48dp</dimen>
+</resources>

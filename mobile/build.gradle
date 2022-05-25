@@ -1,0 +1,112 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
+}
+
+android {
+    compileSdk 32
+
+    buildFeatures {
+        viewBinding true
+    }
+
+    defaultConfig {
+        applicationId "com.nousguide.android.rbtv"
+        minSdk 21
+        targetSdk 32
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    flavorDimensions "dim"
+    productFlavors {
+        production {
+            dimension "dim"
+            matchingFallbacks = ["production"]
+        }
+
+        qa {
+            dimension "dim"
+            matchingFallbacks = ["qa"]
+        }
+
+        staging {
+            dimension "dim"
+            matchingFallbacks = ["staging"]
+        }
+
+        productiondevcc {
+            dimension "dim"
+            matchingFallbacks = ["productiondevcc"]
+        }
+
+        localhost {
+            dimension "dim"
+            matchingFallbacks = ["localhost"]
+        }
+
+        uat {
+            dimension "dim"
+            matchingFallbacks = ["uat"]
+        }
+    }
+}
+
+dependencies {
+    implementation project(path: ':common')
+    implementation "androidx.core:core-ktx:$rootProject.coreKtxVersion"
+    implementation "androidx.appcompat:appcompat:$rootProject.appCompatVersion"
+    implementation "com.google.android.material:material:$rootProject.materialVersion"
+
+    // Kotlin
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$rootProject.coroutinesVersion"
+
+    // Log reporting
+    implementation "com.jakewharton.timber:timber:$rootProject.timberVersion"
+
+    // Dependency Injection
+    implementation "com.google.dagger:hilt-android:$rootProject.hiltVersion"
+    kapt "com.google.dagger:hilt-android-compiler:$rootProject.hiltVersion"
+
+    // One trust
+    implementation("com.onetrust.cmp:native-sdk:$rootProject.oneTrust") {
+        exclude group: 'com.android.support', module: 'support-v4'
+    }
+
+    //navigation graph
+    implementation "androidx.navigation:navigation-fragment-ktx:$rootProject.navGraphVersion"
+    implementation "androidx.navigation:navigation-ui-ktx:$rootProject.navGraphVersion"
+
+    // Network
+    implementation "com.squareup.okhttp3:okhttp:$rootProject.okHttpVersion"
+    implementation "com.squareup.okhttp3:logging-interceptor:$rootProject.okHttpVersion"
+    implementation "com.squareup.retrofit2:retrofit:$rootProject.retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$rootProject.retrofitVersion"
+    implementation "com.squareup.retrofit2:adapter-rxjava3:$rootProject.retrofitVersion"
+    implementation "com.github.mrmike:ok2curl:$rootProject.ok2CurlVersion"
+    implementation "com.google.code.gson:gson:$rootProject.gsonVersion"
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+}

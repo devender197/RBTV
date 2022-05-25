@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Leanback.RedBull" parent="Theme.Leanback">
+        <item name="rowHorizontalGridStyle">@style/Widget.Leanback.Row.HorizontalGridView.Redbull</item>
+
+        <!-- Color Palette -->
+        <item name="android:textColorPrimary">@color/text_primary_dark</item>
+        <item name="android:textColorPrimaryInverse">@color/text_primary_light</item>
+        <item name="android:textColorSecondary">@color/text_primary_dark</item>
+        <item name="android:textColorSecondaryInverse">@color/text_primary_light</item>
+        <item name="android:windowBackground">@color/system_black</item>
+        <item name="colorControlNormal">@color/text_primary_dark</item>
+        <item name="colorPrimary">@color/brand_tertiary</item>
+        <item name="colorPrimaryDark">@color/brand_tertiary</item>
+        <item name="colorPrimaryInverse">@color/text_primary_dark</item>
+        <item name="colorSecondary">@color/brand_tertiary</item>
+        <item name="colorAccent">@color/brand_primary</item>
+        <item name="colorAccentSecondary">@color/accent_secondary</item>
+        <item name="colorAccentTertiary">@color/accent_tertiary</item>
+        <item name="menuActive">@color/text_primary_dark</item>
+        <item name="navGradientColorStart">@color/gradient_nav_menu_start</item>
+        <item name="navGradientColorEnd">@color/gradient_nav_menu_end</item>
+
+        <!-- Type Scale -->
+        <item name="textAppearanceHeadline1">@style/Headline1</item>
+        <item name="textAppearanceHeadline1Mono">@style/Headline1Mono</item>
+        <item name="textAppearanceHeadline2">@style/Headline2</item>
+        <item name="textAppearanceHeadline3">@style/Headline3</item>
+        <item name="textAppearanceHeadline4">@style/Headline4</item>
+        <item name="textAppearanceHeadline5">@style/Headline5</item>
+        <item name="textAppearanceHeadline5Bold">@style/Headline5Bold</item>
+        <item name="textAppearanceHeadline5Caps">@style/Headline5Caps</item>
+        <item name="textAppearanceHeadline6">@style/Headline6</item>
+        <item name="textAppearanceTitle">@style/Title</item>
+        <item name="textAppearanceBody1">@style/Body</item>
+        <item name="textAppearanceBody2">@style/Body</item>
+        <item name="textAppearanceBody3">@style/Body3</item>
+        <item name="textAppearanceCaption">@style/Caption</item>
+        <item name="textAppearanceCaptionBold">@style/CaptionBold</item>
+
+        <!-- Drawables  -->
+        <item name="menuLogo">@drawable/img_logo_nav</item>
+        <item name="homeBackgroundDrawable">@drawable/home_transition_background_dark</item>
+
+        <!-- Buttons -->
+        <item name="buttonBgDefault">@color/button_primary_default</item>
+        <item name="buttonBgActive">@color/button_primary_active</item>
+
+        <!-- Backgrounds -->
+        <item name="customTabBackground">@color/system_background_dark</item>
+
+        <!-- Icons -->
+        <item name="iconBgDefault">@color/brand_secondary</item>
+        <item name="iconBgActive">@color/brand_primary</item>
+
+        <!-- Cards -->
+        <item name="cardChannelTitleTextAppearance">@style/Headline4Caps</item>
+        <item name="cardFormatStyle">@style/Widget.Brand.Button.Primary</item>
+    </style>
+
+    <style name="Theme.Leanback.RedBull.ImageOverlay">
+        <!-- Nothing to change since our main theme works fine over top of images -->
+    </style>
+
+    <style name="Theme.Leanback.RedBull.Light">
+        <item name="android:textColorPrimary">@color/text_primary_light</item>
+        <item name="android:textColorSecondary">@color/text_primary_light</item>
+
+        <item name="cardTextOverlayBg">@color/text_primary_dark</item>
+    </style>
+
+    <style name="Theme.Leanback.RedBull.Button.Primary" parent="Theme.Leanback.RedBull">
+        <item name="android:textColorPrimaryInverse">@color/text_primary_dark</item>
+    </style>
+</resources>

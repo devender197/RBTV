@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <solid android:color="?colorAccent" />
+
+    <size
+        android:width="@dimen/mc_seek_handle_size"
+        android:height="@dimen/mc_seek_handle_size" />
+</shape>

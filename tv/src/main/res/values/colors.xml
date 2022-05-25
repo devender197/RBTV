@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colors from style guide -->
+    <color name="brand_primary">#db0a40</color>
+    <color name="brand_secondary">#737477</color>
+    <color name="brand_tertiary">#191e23</color>
+    <color name="brand_accent">#e2e3e5</color>
+
+    <color name="text_primary_dark">#f8f8f8</color>
+    <color name="text_secondary_dark">#e2e3e5</color>
+
+    <color name="text_primary_light">#191e23</color>
+
+    <color name="system_white">#ffffff</color>
+    <color name="system_black">#000000</color>
+    <color name="system_background_dark">#00060c</color>
+
+    <color name="menu_dark_default">#80FFFFFF</color>
+    <color name="menu_dark_active">#ffffff</color>
+
+    <color name="overlay_primary">#B3000000</color>
+    <color name="overlay_secondary">#80000000</color>
+    <color name="overlay_tertiary">#80000000</color>
+
+    <color name="gradient_primary_start_dark">#B300060c</color>
+    <color name="gradient_primary_end_dark">#0000060c</color>
+
+    <color name="gradient_primary_start_light">#CC00060c</color>
+    <color name="gradient_primary_end_light">#0000060c</color>
+
+    <color name="gradient_nav_menu_start">#0000060c</color>
+    <color name="gradient_nav_menu_end">#e600060c</color>
+
+    <color name="button_primary_default">#191e23</color>
+    <color name="button_primary_active">#db0a40</color>
+    <color name="button_secondary_default">#e2e3e5</color>
+    <color name="button_secondary_active">#db0a40</color>
+    <color name="button_tertiary_default">#e2e3e5</color>
+    <color name="button_tertiary_active">#33000000</color>
+
+    <!-- Custom colors -->
+    <color name="accent_secondary">#f2940a</color>
+    <color name="accent_tertiary">#fad528</color>
+
+    <color name="placeholder_background">#66000000</color> <!-- black at 40% -->
+    <color name="control_background">#4cf8f8f8</color> <!-- controlColorNormal at 30% -->
+    <color name="discover_background">#cc00060c</color> <!-- colorPrimaryDark at 80% -->
+    <color name="overlay_background">#B300060C</color> <!-- windowBackground at 70% -->
+    <color name="scroll_position_background">#3ff8f8f8</color> <!-- controlColorNormal at 25% -->
+</resources>

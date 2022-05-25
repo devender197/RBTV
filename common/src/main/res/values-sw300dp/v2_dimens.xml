@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="horizontal_list_full_video_card_height">220dp</dimen>
+    <dimen name="horizontal_list_channel_card_height">75dp</dimen>
+    <dimen name="horizontal_list_linear_channel_card_height">60dp</dimen>
+    <dimen name="featured_carousel_height_adjustment">100dp</dimen>
+
+    <dimen name="horizontal_list_generic_page_card_width">147dp</dimen>
+</resources>

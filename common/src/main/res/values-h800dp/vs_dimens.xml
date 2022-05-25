@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Stage -->
+    <dimen name="stage_content_bottom_margin">24dp</dimen>
+
+</resources>

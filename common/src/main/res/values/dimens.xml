@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="search_result_padding">20dp</dimen>
+    <dimen name="search_result_left_margin">16dp</dimen>
+    <dimen name="unscrollableviewpager_tab_paddingtop">16dp</dimen>
+    <dimen name="tabslayout_margintop">2dp</dimen>
+    <dimen name="tabslayout_marginbottom">6dp</dimen>
+    <dimen name="channels_card_start_margin">5dp</dimen>
+    <dimen name="channels_card_bottom_margin">5dp</dimen>
+    <dimen name="onboarding_login_description_text_line_spacing">10dp</dimen>
+    <dimen name="downloads_and_favorites_description_text_line_spacing">8dp</dimen>
+</resources>

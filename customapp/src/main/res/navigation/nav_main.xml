@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph">
+
+    <fragment
+        android:id="@+id/splash_fragment"
+        android:name="com.nousguide.android.customapp.screen.splash.SplashFragment"
+        android:label="SplashFragment"
+        tools:layout="@layout/fragment_splash" />
+
+    <fragment
+        android:id="@+id/login_fragment"
+        android:name="com.nousguide.android.customapp.screen.login.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login" />
+
+    <fragment
+        android:id="@+id/home_fragment"
+        android:name="com.nousguide.android.customapp.screen.home.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/browse_fragment"
+        android:name="com.nousguide.android.customapp.screen.browse.BrowseFragment"
+        android:label="BrowseFragment"
+        tools:layout="@layout/fragment_browse" />
+
+    <fragment
+        android:id="@+id/channels_fragment"
+        android:name="com.nousguide.android.customapp.screen.channels.ChannelsFragment"
+        android:label="ChannelsFragment"
+        tools:layout="@layout/fragment_channels" />
+
+    <fragment
+        android:id="@+id/events_fragment"
+        android:name="com.nousguide.android.customapp.screen.events.EventsFragment"
+        android:label="EventsFragment"
+        tools:layout="@layout/fragment_event" />
+
+    <fragment
+        android:id="@+id/account_fragment"
+        android:name="com.nousguide.android.customapp.screen.account.AccountFragment"
+        android:label="AccountFragment"
+        tools:layout="@layout/fragment_account" />
+
+</navigation>

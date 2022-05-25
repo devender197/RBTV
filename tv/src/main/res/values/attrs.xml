@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TextControl">
+        <attr name="controlIconWidth" format="dimension" />
+        <attr name="controlIconHeight" format="dimension" />
+        <attr name="primaryControlBackgroundRadius" format="dimension" />
+        <attr name="controlText" format="string" />
+        <attr name="controlTextStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="IconControl">
+        <attr name="controlIcon" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="LabelContainer">
+        <attr name="label_state" format="enum">
+            <enum name="replay" value="0" />
+            <enum name="time" value="1" />
+            <enum name="live" value="2" />
+            <enum name="stream" value="3" />
+            <enum name="watching_full" value="4" />
+            <enum name="watching_compact" value="5" />
+            <enum name="canceled" value="6" />
+            <enum name="delayed" value="7" />
+            <enum name="window" value="8" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="RoundedFrameLayout">
+        <attr name="rounded_side" format="enum">
+            <enum name="top" value="0" />
+            <enum name="bottom" value="1" />
+            <enum name="left" value="2" />
+            <enum name="right" value="3" />
+            <enum name="all" value="4" />
+            <enum name="none" value="5" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="RoundedRelativeLayout" parent="RoundedFrameLayout" />
+    <declare-styleable name="RoundedLinearLayout" parent="RoundedFrameLayout" />
+
+    <declare-styleable name="VerticalContainerView">
+        <attr name="gridTopPadding" format="dimension" />
+    </declare-styleable>
+
+    <!-- Type Scale -->
+    <attr name="textAppearanceHeadline1" format="reference" />
+    <attr name="textAppearanceHeadline1Mono" format="reference" />
+    <attr name="textAppearanceHeadline2" format="reference" />
+    <attr name="textAppearanceHeadline3" format="reference" />
+    <!-- skip Headline4, since it's only used in the account flows -->
+    <attr name="textAppearanceHeadline5" format="reference" />
+    <attr name="textAppearanceHeadline5Bold" format="reference" />
+    <attr name="textAppearanceHeadline5Caps" format="reference" />
+    <attr name="textAppearanceHeadline6" format="reference" />
+    <attr name="textAppearanceHeadline6Caps" format="reference" />
+    <attr name="textAppearanceTitle" format="reference" />
+    <attr name="textAppearanceBody1" format="reference" />
+    <attr name="textAppearanceBody2" format="reference" />
+    <attr name="textAppearanceBody3" format="reference" />
+    <attr name="textAppearanceCaption" format="reference" />
+    <attr name="textAppearanceCaptionBold" format="reference" />
+
+    <!-- Color Palette -->
+    <attr name="colorPrimaryInverse" format="reference" />
+    <attr name="colorAccentSecondary" format="reference" />
+    <attr name="colorAccentTertiary" format="reference" />
+
+    <!-- Buttons -->
+    <attr name="buttonBgDefault" format="reference" />
+    <attr name="buttonBgActive" format="reference" />
+
+    <!-- Items -->
+    <attr name="itemBgDefault" format="reference" />
+    <attr name="itemBgActive" format="reference" />
+
+    <!-- Icons -->
+    <attr name="iconBgDefault" format="reference" />
+    <attr name="iconBgActive" format="reference" />
+
+    <!-- Menu -->
+    <attr name="menuActive" format="color" />
+
+    <!-- Drawables -->
+    <attr name="menuLogo" format="reference" />
+    <attr name="homeBackgroundDrawable" format="reference" />
+
+    <!-- Gradients -->
+    <attr name="navGradientColorStart" format="color" />
+    <attr name="navGradientColorEnd" format="color" />
+
+    <!-- Backgrounds -->
+    <attr name="customTabBackground" format="color" />
+    <attr name="overlayBackgroundDrawable" format="color" />
+
+    <!-- Cards -->
+    <attr name="cardChannelTitleTextAppearance" format="reference" />
+    <attr name="cardFormatStyle" format="reference" />
+    <attr name="cardTextOverlayBg" format="color" />
+</resources>

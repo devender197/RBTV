@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="ic_logo_nav_dark">@drawable/ic_home_logo_dark</drawable>
+    <drawable name="ic_logo_nav">@drawable/ic_home_logo</drawable>
+    <drawable name="ic_logo_login">@drawable/login_logo</drawable>
+    <drawable name="splash_logo">@drawable/splash_logo_rbtv</drawable>
+    <drawable name="ic_epg">#ffccff</drawable>
+</resources>

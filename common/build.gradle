@@ -1,0 +1,132 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+
+}
+
+android {
+    compileSdk 32
+
+    buildFeatures {
+        viewBinding true
+    }
+
+    defaultConfig {
+        minSdk 21
+        targetSdk 32
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    flavorDimensions "dim"
+    productFlavors {
+        production {
+            buildConfigField "String", "kBaseUrl", '"https://api.redbull.tv"'
+            buildConfigField "String", "kHistoryUrl", '"https://history.redbull.com"'
+            buildConfigField "String", "brazeIdLookupUrl", '"https://braze-identifier.redbull.com"'
+        }
+
+        qa {
+            buildConfigField "String", "kBaseUrl", '"https://api-qa.redbull.tv"'
+            buildConfigField "String", "kHistoryUrl", '"https://history-qa.redbull.com"'
+            buildConfigField "String", "brazeIdLookupUrl", '"https://braze-identifier-qa.redbull.com"'
+        }
+
+        staging {
+            buildConfigField "String", "kBaseUrl", '"https://api-staging.redbull.tv"'
+            buildConfigField "String", "kHistoryUrl", '"https://history-staging.redbull.com"'
+            buildConfigField "String", "brazeIdLookupUrl", '"https://braze-identifier-staging.redbull.com"'
+        }
+
+        productiondevcc {
+            buildConfigField "String", "kBaseUrl", '"https://api.redbull.tv"'
+            buildConfigField "String", "kHistoryUrl", '"https://history.redbull.com"'
+            buildConfigField "String", "brazeIdLookupUrl", '""'
+        }
+
+        localhost {
+            buildConfigField "String", "kBaseUrl", '"https://api-qa.redbull.tv"'
+            buildConfigField "String", "kHistoryUrl", '"https://history-qa.redbull.com"'
+            buildConfigField "String", "brazeIdLookupUrl", '""'
+        }
+
+        uat {
+            buildConfigField "String", "kBaseUrl", '"https://api-uat.redbull.tv"'
+            buildConfigField "String", "kHistoryUrl", '"https://history-uat.redbull.com"'
+            buildConfigField "String", "brazeIdLookupUrl", '"https://braze-identifier-staging.redbull.com"'
+        }
+    }
+}
+
+dependencies {
+
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$rootProject.lifecycleVersion"
+    implementation "androidx.lifecycle:lifecycle-common-java8:$rootProject.lifecycleVersion"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$rootProject.lifecycleVersion"
+
+    implementation "androidx.constraintlayout:constraintlayout:$rootProject.constraintLayoutVersion"
+    implementation "androidx.fragment:fragment-ktx:$rootProject.fragmentKtxVersion"
+
+    // Kotlin
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$rootProject.coroutinesVersion"
+
+    // Network
+    implementation "com.squareup.okhttp3:okhttp:$rootProject.okHttpVersion"
+    implementation "com.squareup.okhttp3:logging-interceptor:$rootProject.okHttpVersion"
+    implementation "com.squareup.retrofit2:retrofit:$rootProject.retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$rootProject.retrofitVersion"
+    implementation "com.squareup.retrofit2:adapter-rxjava3:$rootProject.retrofitVersion"
+    implementation "com.github.mrmike:ok2curl:$rootProject.ok2CurlVersion"
+    implementation "com.google.code.gson:gson:$rootProject.gsonVersion"
+
+    // Dependency Injection
+    implementation "com.google.dagger:hilt-android:$rootProject.hiltVersion"
+    kapt "com.google.dagger:hilt-android-compiler:$rootProject.hiltVersion"
+
+
+    // Log reporting
+    implementation "com.jakewharton.timber:timber:$rootProject.timberVersion"
+    implementation "com.airbnb.android:lottie:$rootProject.lottieVersion"
+
+    //navigation graph
+    implementation "androidx.navigation:navigation-fragment-ktx:$rootProject.navGraphVersion"
+    implementation "androidx.navigation:navigation-ui-ktx:$rootProject.navGraphVersion"
+
+    // Glide
+    implementation "com.github.bumptech.glide:glide:$rootProject.glideVersion"
+    annotationProcessor "com.github.bumptech.glide:compiler:$rootProject.glideVersion"
+
+    // One trust
+    implementation("com.onetrust.cmp:native-sdk:$rootProject.oneTrust") {
+        exclude group: 'com.android.support', module: 'support-v4'
+    }
+
+    // google signin
+    implementation "com.google.android.gms:play-services-auth:$rootProject.googleSignInVersion"
+
+    // Exoplayer
+    implementation "com.google.android.exoplayer:exoplayer:$rootProject.exoPlayerVersion"
+    implementation "com.google.android.exoplayer:exoplayer-core:$rootProject.exoPlayerVersion"
+    implementation "com.google.android.exoplayer:exoplayer-dash:$rootProject.exoPlayerVersion"
+    implementation "com.google.android.exoplayer:exoplayer-ui:$rootProject.exoPlayerVersion"
+
+    //datastore
+    implementation "androidx.datastore:datastore-preferences:$rootProject.dataStoreVersion"
+}

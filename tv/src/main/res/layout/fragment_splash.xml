@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.nousguide.android.common.commom.CommonView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:windowBackground"
+    android:clickable="true"
+    android:focusable="true">
+
+    <VideoView
+        android:id="@+id/apiErrorVideoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="?android:windowBackground"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/apiErrorVideoOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.3"
+        android:visibility="gone" />
+
+    <com.nousguide.android.common.commom.CommonView
+        android:id="@+id/normalContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/MatchParentEdgesViewStyle">
+
+        <com.nousguide.android.common.commom.CommonImageView
+            android:id="@+id/logo"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/splash_logo"
+            tools:ignore="ContentDescription"
+            tools:srcCompat="@drawable/splash_logo_rbtv"
+            tools:visibility="visible" />
+
+        <com.nousguide.android.common.commom.CommonLabel
+            android:id="@+id/title"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:textAppearance="?textAppearanceTitle"
+            android:textColor="?android:textColorPrimary"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logo"
+            tools:visibility="visible" />
+
+        <com.nousguide.android.common.commom.CommonLabel
+            android:id="@+id/message"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAppearance="?textAppearanceBody1"
+            android:textColor="?android:textColorPrimary"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title"
+            tools:visibility="visible" />
+
+    </com.nousguide.android.common.commom.CommonView>
+
+    <com.nousguide.android.common.commom.CommonView
+        android:id="@+id/apiErrorContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.nousguide.android.common.commom.CommonImageView
+            android:id="@+id/imgError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_nodata"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/rb_white"
+            tools:ignore="ContentDescription" />
+
+        <com.nousguide.android.common.commom.CommonLabel
+            android:id="@+id/tvTitleError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="@string/our_bad"
+            android:textAppearance="?textAppearanceTitle"
+            android:textColor="?android:textColorPrimaryInverse"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgError" />
+
+        <com.nousguide.android.common.commom.CommonLabel
+            android:id="@+id/tvDescError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:maxWidth="400dp"
+            android:text="@string/error_description"
+            android:textAppearance="?textAppearanceBody1"
+            android:textColor="?android:textColorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitleError" />
+
+        <com.nousguide.android.common.commom.CommonLabel
+            android:id="@+id/errorButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/splash_error_report_button"
+            android:gravity="center"
+            android:maxWidth="400dp"
+            android:text="@string/error_report_issue"
+            android:textAppearance="?textAppearanceButton"
+            android:textColor="?android:textColorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDescError" />
+
+    </com.nousguide.android.common.commom.CommonView>
+
+</com.nousguide.android.common.commom.CommonView>

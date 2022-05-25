@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <dimen name="design_bottom_navigation_text_size" tools:override="true">8sp</dimen>
+    <dimen name="design_bottom_navigation_active_text_size" tools:override="true">8sp</dimen>
+
+    <dimen name="top_bar_height">60dp</dimen>
+    <dimen name="bottom_bar_height">10dp</dimen>
+
+    <dimen name="outlineBorderWidth">1dp</dimen>
+
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="instant_app_dialog_width">420dp</dimen>
+
+    <!-- Account -->
+    <dimen name="no_favorites_icon_top_margin">75dp</dimen>
+    <dimen name="no_favorites_icon_size">64dp</dimen>
+    <dimen name="no_favorites_description_max_width">640dp</dimen>
+    <dimen name="no_favorites_button_max_width">512dp</dimen>
+    <dimen name="no_favorites_button_top_margin">80dp</dimen>
+
+</resources>

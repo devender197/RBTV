@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="black_transparency_40">#66000000</color>
+    <color name="white" tools:override="true">#FFFFFF</color>
+
+    <color name="greyDarkExtra">#7C828A</color>
+    <color name="greyDark">#848484</color>
+    <color name="grey">#D7D7D7</color>
+    <color name="greyLight">#F0F0F0</color>
+    <color name="greyLightExtra">#F7F7F7</color>
+    <color name="blueDark">#212C39</color>
+    <color name="blue">#1E22AA</color>
+    <color name="blueLight">#2DA5CF</color>
+    <color name="red">#E31F26</color>
+
+    <color name="brand_color_akt">#60269E</color>
+    <color name="brand_color_clubpilates">#5B8AC6</color>
+    <color name="brand_color_cyclebar">#BF2024</color>
+    <color name="brand_color_rowhouse">#000000</color>
+    <color name="brand_color_purebarre">#E31F26</color>
+    <color name="brand_color_stretchlab">#00ABBA</color>
+    <color name="brand_color_yogasix">#67882A</color>
+    <color name="brand_color_stride">#F37021</color>
+    <color name="brand_color_xpo">#212C39</color>
+
+    // rbtv
+    <color name="primary_color">#081829</color>
+    <color name="secondary_color">#666872</color>
+    <color name="secondary_color_30">#4D666872</color>
+    <color name="accent_color">#db0a40</color>
+
+    <color name="pure_black">#000000</color>
+    <color name="pure_black_80_opacity">#cc000000</color>
+    <color name="pure_black_70_opacity">#b2000000</color>
+    <color name="pure_black_50_opacity">#80000000</color>
+    <color name="pure_black_40_opacity">#66000000</color>
+    <color name="pure_black_30_opacity">#48000000</color>
+    <color name="pure_black_20_opacity">#33000000</color>
+    <color name="pure_black_25_opacity">#40000000</color>
+    <color name="pure_white">#ffffff</color>
+    <color name="pure_white_8_opacity">#14ffffff</color>
+    <color name="pure_white_25_opacity">#40ffffff</color>
+    <color name="pure_white_30_opacity">#48ffffff</color>
+    <color name="pure_white_50_opacity">#80ffffff</color>
+    <color name="rb_black">#141519</color>
+    <color name="rb_black_80_opacity">#cc141519</color>
+    <color name="rb_black_60_opacity">#9a141519</color>
+    <color name="rb_black_50_opacity">#80141519</color>
+    <color name="rb_gray_100_90_opacity">#e5252525</color>
+    <color name="rb_gray_100_50_opacity">#80252525</color>
+    <color name="rb_gray_100">#23252a</color>
+    <color name="rb_gray_150">#303030</color>
+    <color name="rb_gray_200">#666872</color>
+    <color name="rb_gray_200_90_opacity">#e5666872</color>
+    <color name="rb_gray_300">#94969b</color>
+    <color name="rb_red">#db0a40</color>
+    <color name="rb_orange">#f2940a</color>
+    <color name="rb_yellow">#fad528</color>
+
+    <color name="new_grey_1">#b2b3b8</color>    <!-- TODO -->
+    <color name="new_grey_2">#94969B</color>    <!-- TODO -->
+
+    <color name="new_lightest_grey">#A0A0A1</color>
+    <color name="new_lighter_grey">#737477</color>
+
+    <color name="app_background">#000f1e</color>
+    <color name="app_background_80_opacity">#cc000f1e</color>
+    <color name="player_background">@color/app_background</color>
+    <color name="new_blue">#081829</color>
+    <color name="card_featured_title">@color/rb_white</color>
+    <color name="card_featured_subtitle">@color/new_lightest_grey</color>
+    <color name="card_title_color">@color/rb_white</color>
+    <color name="card_subtitle_color">@color/new_lightest_grey</color>
+    <color name="gray_blue">#132632</color>
+    <color name="rb_white">#F8F8F8</color>
+    <color name="rb_white_25_opacity">#40888888</color>
+    <color name="rb_white_30_opacity">#4DF8F8F8</color>
+    <color name="new_rb_white_50_opacity">#80f8f8f8</color>
+
+    <color name="video_overlay">#96000000</color>
+    <color name="icon">@color/rb_white</color>
+    <color name="status_label">@color/rb_white</color>
+    <color name="card_bg">@color/new_blue</color>
+    <color name="divider">@color/rb_gray_100</color>
+    <color name="chevron">@color/rb_gray_200</color>
+    <color name="teaser_text_and_icon">#b2b3b8</color>
+    <color name="facebook_blue">#3b5998</color>
+    <color name="ripple_main_color">#3dffffff</color> <!-- light on RBTV -->
+    <color name="ripple_secondary_color">#21081829</color> <!-- dark on RBTV -->
+    <color name="ripple_main_overflow_color">#26ffffff</color> <!-- light on RBTV -->
+    <color name="ripple_overflow_secondary_color">#26222222</color> <!-- dark on RBTV -->
+
+    <color name="overflow_full_video_stop_card">@color/new_lighter_grey</color>
+    <color name="card_label_live_bg">@color/rb_red</color>
+    <color name="card_label_common_bg">@color/app_background</color>
+    <color name="card_label_common_text">@color/rb_white</color>
+    <color name="toolbar_bg">@color/new_blue</color>
+    <color name="stage_bg">#00000000</color>
+    <color name="nav_item">@color/rb_white_30_opacity</color>
+    <color name="nav_item_selected">@color/rb_white</color>
+    <color name="nav_bar_bg">@color/new_blue</color>
+    <color name="image_placeholder">@color/app_background</color>
+    <color name="dialog_background">@color/gray_blue</color>
+    <color name="default_text_icon_color">@color/rb_white</color>
+    <color name="default_text_icon_color_25_opacity">@color/rb_white_25_opacity</color>
+    <color name="seek_handle_color">@color/pure_white</color>
+    <color name="seek_bar_progress_color">@color/pure_white</color>
+    <color name="seek_bar_color">@color/pure_white_30_opacity</color>
+    <color name="radio_button_checked">@color/rb_red</color>
+    <color name="radio_button_unchecked">@color/rb_white</color>
+    <color name="selectable_item_background">@color/rb_white</color>
+    <color name="email_login_button">@android:color/transparent</color>
+    <color name="email_login_button_ripple">@color/ripple_main_color</color>
+    <color name="tab_text">@color/new_lighter_grey</color>
+    <color name="tab_text_selected">@color/rb_white</color>
+    <color name="tab_indicator">@color/rb_red</color>
+    <color name="card_default_status_color">@color/rb_gray_200</color>
+    <color name="default_status_bar">@android:color/transparent</color>
+    <color name="splash_navigation_bar">@color/app_background</color>
+    <color name="about_subtitle">@color/teaser_text_and_icon</color>
+    <color name="about_details">@color/rb_gray_300</color>
+    <color name="horizontal_list_header">@color/rb_white</color>
+    <color name="horizontal_list_view_all">@color/new_lighter_grey</color>
+    <color name="cast_dialog_media_subtitle">@color/rb_gray_200</color>
+    <color name="account_login_other">@color/rb_gray_300</color>
+    <color name="card_generic_full_title">@color/new_grey_1</color>
+    <color name="card_generic_full_subtitle">@color/new_grey_2</color>
+    <color name="ic_play_circle_background">@color/rb_red</color>
+    <color name="featured_card_gradient_start">#fb000f1e</color>
+    <color name="snack_bar_bg">#0a86cb</color>
+
+
+    <color name="card_program_bg_live">#e2e3e5</color>
+
+    <!-- Tying to match 10ft and style guide. Defaulting to RB colors-->
+    <color name="text_primary_light">@color/rb_black</color>
+    <color name="text_primary_dark">@color/rb_white</color>
+    <color name="brand_primary">@color/rb_red</color>
+
+    <color name="white_ripple_color">@color/rb_black</color>
+    <color name="progress_bar_color">@color/rb_red</color>
+
+
+</resources>

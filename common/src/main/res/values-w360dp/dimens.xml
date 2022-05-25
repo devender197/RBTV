@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cast_button_container_outside_margin">30dp</dimen>
+    <dimen name="cast_button_size">24dp</dimen>
+    <dimen name="player_button_size">64dp</dimen>
+    <dimen name="player_cast_button_size">36dp</dimen>
+    <dimen name="player_container_width">232dp</dimen>    <!-- player_button_size * 3 + 20 * 2) -->
+    <dimen name="player_progress_spinner_size">46dp</dimen>
+</resources>
