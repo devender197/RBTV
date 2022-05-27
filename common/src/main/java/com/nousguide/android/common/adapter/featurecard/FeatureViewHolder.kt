@@ -60,11 +60,11 @@ class FeatureViewHolder(val view: View) : CommonViewHolder(view) {
         }*/
 
         view.lifecycleScope.launch {
-            previewImage.loadBitmap(model.previewImageUrl)
+            previewImage.apply { loadBitmap(model.previewImageUrl(previewImage.height.px, 65)) }
         }
 
         headerView.action { listener.onItemClickListener(model) }
-        view.setOnFocusChangeListener{ _, isFocused ->
+        view.setOnFocusChangeListener { _, isFocused ->
             videoView.player?.apply {
                 if (isFocused && model.playable) {
                     previewImage.isVisible = false

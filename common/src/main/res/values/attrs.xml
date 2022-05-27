@@ -140,5 +140,16 @@
         <attr name="videoUrl" format="string" />
     </declare-styleable>
 
+    <declare-styleable name="RoundedFrameLayout">
+        <attr name="rounded_side" format="enum">
+            <enum name="top" value="0" />
+            <enum name="bottom" value="1" />
+            <enum name="left" value="2" />
+            <enum name="right" value="3" />
+            <enum name="all" value="4" />
+            <enum name="none" value="5" />
+        </attr>
+    </declare-styleable>
+
 
 </resources>

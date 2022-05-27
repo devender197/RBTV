@@ -39,36 +39,42 @@ android {
     productFlavors {
         production {
             buildConfigField "String", "kBaseUrl", '"https://api.redbull.tv"'
+            buildConfigField "String", "kResourceUrl", '"https://resources.redbull.tv/"'
             buildConfigField "String", "kHistoryUrl", '"https://history.redbull.com"'
             buildConfigField "String", "brazeIdLookupUrl", '"https://braze-identifier.redbull.com"'
         }
 
         qa {
             buildConfigField "String", "kBaseUrl", '"https://api-qa.redbull.tv"'
+            buildConfigField "String", "kResourceUrl", '"https://resources-qa.redbull.tv/"'
             buildConfigField "String", "kHistoryUrl", '"https://history-qa.redbull.com"'
             buildConfigField "String", "brazeIdLookupUrl", '"https://braze-identifier-qa.redbull.com"'
         }
 
         staging {
             buildConfigField "String", "kBaseUrl", '"https://api-staging.redbull.tv"'
+            buildConfigField "String", "kResourceUrl", '"https://resources-staging.redbull.tv/"'
             buildConfigField "String", "kHistoryUrl", '"https://history-staging.redbull.com"'
             buildConfigField "String", "brazeIdLookupUrl", '"https://braze-identifier-staging.redbull.com"'
         }
 
         productiondevcc {
             buildConfigField "String", "kBaseUrl", '"https://api.redbull.tv"'
+            buildConfigField "String", "kResourceUrl", '"https://resources.redbull.tv/"'
             buildConfigField "String", "kHistoryUrl", '"https://history.redbull.com"'
             buildConfigField "String", "brazeIdLookupUrl", '""'
         }
 
         localhost {
             buildConfigField "String", "kBaseUrl", '"https://api-qa.redbull.tv"'
+            buildConfigField "String", "kResourceUrl", '"https://resources-qa.redbull.tv/"'
             buildConfigField "String", "kHistoryUrl", '"https://history-qa.redbull.com"'
             buildConfigField "String", "brazeIdLookupUrl", '""'
         }
 
         uat {
             buildConfigField "String", "kBaseUrl", '"https://api-uat.redbull.tv"'
+            buildConfigField "String", "kResourceUrl", '"https://resources-uat.redbull.tv/"'
             buildConfigField "String", "kHistoryUrl", '"https://history-uat.redbull.com"'
             buildConfigField "String", "brazeIdLookupUrl", '"https://braze-identifier-staging.redbull.com"'
         }

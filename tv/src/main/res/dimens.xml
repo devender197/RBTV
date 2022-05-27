@@ -111,6 +111,8 @@
     <dimen name="corner_radius">4dp</dimen>
     <dimen name="corner_radius_label_container">2dp</dimen>
 
+    <dimen name="channel_card_width">199dp</dimen>
+    <dimen name="channel_card_height">116dp</dimen>
     <!-- MediaSession -->
     <dimen name="media_session_now_playing_width">600dp</dimen>
     <dimen name="media_session_now_playing_height">406dp</dimen>

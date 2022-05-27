@@ -5,16 +5,16 @@ import android.util.AttributeSet
 import android.view.View
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
-import android.widget.FrameLayout
 import com.google.android.exoplayer2.ExoPlayer
 import com.nousguide.android.common.R
+import com.nousguide.android.common.commom.RoundedFrameLayout
 
 abstract class Card(
     context: Context,
     attrs: AttributeSet? = null,
     defStyleAttr: Int = 0,
     defStyleRes: Int = 0
-) : FrameLayout(context, attrs, defStyleAttr, defStyleRes), View.OnFocusChangeListener {
+) : RoundedFrameLayout(context, attrs, defStyleAttr), View.OnFocusChangeListener {
 
     var exoplayer: ExoPlayer = ExoPlayer.Builder(context).build()
 

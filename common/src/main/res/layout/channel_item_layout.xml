@@ -3,14 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/headerView"
-    android:layout_width="150dp"
-    android:layout_height="@dimen/channel_sponsor_image_width"
+    android:layout_width="@dimen/channel_card_width"
+    android:layout_height="@dimen/channel_card_width"
     android:layout_marginEnd="@dimen/margin_default">
 
     <ImageView
         android:id="@+id/imgChannel"
-        android:layout_width="150dp"
-        android:layout_height="@dimen/channel_sponsor_image_width"
+        android:layout_width="@dimen/channel_card_width"
+        android:layout_height="@dimen/channel_card_width"
         android:scaleType="centerCrop"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"

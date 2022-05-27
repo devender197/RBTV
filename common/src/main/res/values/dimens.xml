@@ -9,4 +9,5 @@
     <dimen name="channels_card_bottom_margin">5dp</dimen>
     <dimen name="onboarding_login_description_text_line_spacing">10dp</dimen>
     <dimen name="downloads_and_favorites_description_text_line_spacing">8dp</dimen>
+
 </resources>

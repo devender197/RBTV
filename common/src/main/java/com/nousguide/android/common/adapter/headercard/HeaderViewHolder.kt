@@ -72,7 +72,7 @@ class HeaderViewHolder(val view: View) : CommonViewHolder(view) {
         }*/
 
         view.lifecycleScope.launch {
-            previewImage.loadBitmap(model.previewImageUrl)
+            previewImage.loadBitmap(model.previewImageUrl(previewImage.width.px, 65))
         }
 
 

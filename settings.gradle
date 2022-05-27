@@ -16,5 +16,5 @@ rootProject.name = "rbtv"
 include ':mobile'
 include ':tv'
 include ':common'
-include ':customapp'
+include ':app'
 include ':rbtv'

@@ -1,6 +1,7 @@
 package com.nousguide.android.common.models
 
 import com.nousguide.android.common.adapter.HorizontalAdapter
+import com.nousguide.android.common.models.common.EndpointModel
 
 class ProductCollection(
     val content_type: String,
@@ -61,22 +62,19 @@ class ProductCollection(
         val year: Int = 0
     ) {
         val previewVideoUrl
-            get() =
-                "https://resources-qa.redbull.tv/$id/short_preview_mp4_medium/video.mp4?namespace=rbtv"
+            get() = EndpointModel.VIDEO_PREVIEW.getResourceUrl(id)
 
-        val previewImageUrl
-            get() =
-                "https://resources-qa.redbull.tv/$id/rbtv_display_art_square/im:i:w_250,c_fill,q_35?namespace=rbtv"
+        fun coverImageUrl(dim: Int, quality: Int) =
+            EndpointModel.COVER_IMAGE.getResourceUrl(id, dim, quality)
+
+        fun previewImageUrl(dim: Int, quality: Int) =
+            EndpointModel.IMAGE_PREVIEW.getResourceUrl(id, dim, quality)
 
         val thumbnailImageUrl
-            get() =
-                "https://resources-qa.redbull.tv/$id/rbtv_display_art_square/im:i:w_200,c_fill,q_65?namespace=rbtv"
+            get() = EndpointModel.IMAGE_PREVIEW.getResourceUrl(id, 100, 35)
 
         val titleImageUrl
-            get() = "https://resources-qa.redbull.tv/$id/rbtv_title_treatment_landscape?namespace=rbtv"
-
-        val coverImageUrl
-            get() = "https://resources-qa.redbull.tv/$id/rbtv_cover_art_portrait/im:i:w_300,c_fill,q_65?namespace=rbtv"
+            get() = EndpointModel.TITLE_IMAGE.getResourceUrl(id)
 
         val getResource
             get() = resources?.map { resource ->

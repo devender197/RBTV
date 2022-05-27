@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="video_card_width">226dp</dimen>
+    <dimen name="video_card_height">178dp</dimen>
+    <dimen name="video_card_width_focused">246dp</dimen>
+    <dimen name="video_card_image_height">127dp</dimen>
+
+    <dimen name="cover_card_width">173dp</dimen>
+    <dimen name="cover_card_height">230dp</dimen>
+    <dimen name="cover_card_width_focused">193dp</dimen>
+    <dimen name="cover_card_height_focused">250dp</dimen>
+
+    <dimen name="featured_card_width">409dp</dimen>
+    <dimen name="featured_card_height">230dp</dimen>
+    <dimen name="featured_card_width_focused">429dp</dimen>
+    <dimen name="featured_card_height_focused">250dp</dimen>
+
+    <dimen name="channel_card_width">199dp</dimen>
+    <dimen name="channel_card_height">116dp</dimen>
+    <dimen name="channel_card_width_focused">215dp</dimen>
+    <dimen name="channel_card_height_focused">132dp</dimen>
+
+</resources>

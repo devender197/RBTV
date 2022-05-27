@@ -1,6 +1,7 @@
 package com.nousguide.android.common.models
 
 import com.nousguide.android.common.adapter.HorizontalAdapter
+import com.nousguide.android.common.models.common.EndpointModel
 
 data class LinearChannel(
     val content_type: String,
@@ -32,10 +33,8 @@ data class LinearChannel(
         val title: String,
         val type: String
     ) {
-        val previewImageUrl
-            get() =
-                "https://resources-qa.redbull.tv/$id/rbtv_display_art_square/im:i:w_400,c_fill,q_65?namespace=rbtv"
-
+        fun previewImageUrl(dim: Int, quality: Int) =
+            EndpointModel.IMAGE_PREVIEW.getResourceUrl(id, dim, quality)
 
         val itemViewType: Int
             get() = HorizontalAdapter.CHANNEL_VIEW

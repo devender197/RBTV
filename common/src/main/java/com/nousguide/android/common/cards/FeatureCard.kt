@@ -54,7 +54,7 @@ class FeatureCard(
 
         if(typedArray.hasValue(R.styleable.FeatureCard_imageUrl)){
             typedArray.getString(R.styleable.FeatureCard_imageUrl)?.let { url ->
-                previewImage.loadThumbnail(url)
+                previewImage.loadBitmap(url)
             }
         }
 
